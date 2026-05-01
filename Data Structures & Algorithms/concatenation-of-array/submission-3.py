@@ -1,0 +1,9 @@
+class Solution:
+    def getConcatenation(self, nums: List[int]) -> List[int]:
+        current_length = len(nums)
+        i = 0
+        while(i<current_length):
+            nums.append(nums[i])
+            i += 1
+        return nums
+        
